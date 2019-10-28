@@ -11,7 +11,7 @@
 option(gmock_build_tests "Build all of Google Mock's own tests." OFF)
 
 # A directory to find Google Test sources.
-if (EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/gtest/CMakeLists.txt")
+if (EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/gtest/CMakeLists.txt") #add path inside the code
   set(gtest_dir gtest)
 else()
   set(gtest_dir ../googletest)
